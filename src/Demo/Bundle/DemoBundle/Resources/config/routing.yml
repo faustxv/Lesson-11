@@ -1,0 +1,12 @@
+article:
+    path:     /
+    defaults: { _controller: "DemoBundle:Article:new" }
+
+article_show:
+    path:     /{id}/show
+    defaults: { _controller: "DemoBundle:Article:show" }
+
+article_create:
+    path:     /create
+    defaults: { _controller: "DemoBundle:Article:create" }
+    methods:  POST

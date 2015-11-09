@@ -1,0 +1,22 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <div class="container">
+        <h1>Article</h1>
+        <table class="record_properties">
+            <tbody>
+                <tr>
+                    <th>Your First name: </th>
+                    <td>{{ entity.firstName }}</td>
+                </tr>
+                <tr>
+                    <th>Your Second name: </th>
+                    <td>{{ entity.secomdName }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <ul class="record_actions">
+	<a href = "/" class = "btn btn-primary"> Home</a>
+</ul>
+{% endblock %}

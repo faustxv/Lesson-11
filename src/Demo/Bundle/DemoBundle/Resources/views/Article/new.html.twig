@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1 class = "article">Article Created</h1>
+	<div class="container">
+	    {{ form_start(form, {'attr': {'class': 'form'}}) }}
+	    {{ form_errors(form) }}
+
+	    {{ form_widget(form.firstName, {'attr': {'class': 'form-control'}}) }}
+	    {{ form_widget(form.secomdName, {'attr': {'class': 'form-control'}}) }}
+	    {{ form_widget(form.submit, {'attr': {'class': 'btn btn-success'}}) }}
+		{{ form_end(form) }}
+	</div>
+{% endblock %}

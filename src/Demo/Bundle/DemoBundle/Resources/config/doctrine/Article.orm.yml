@@ -1,0 +1,20 @@
+Demo\Bundle\DemoBundle\Entity\Article:
+    type: entity
+    table: null
+    repositoryClass: Demo\Bundle\DemoBundle\Entity\ArticleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        firstName:
+            type: string
+            length: 255
+            column: first_name
+        secomdName:
+            type: string
+            length: 255
+            column: secomd_name
+    lifecycleCallbacks: {  }
